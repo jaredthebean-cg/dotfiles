@@ -7,9 +7,8 @@
 	pager = delta
 [user]
 	name = Jared Bean
-	email = jibean19@gmail.com
-	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICBVgRI3BydEezqnM5NREF52ygJyGw9kYcUrtWN4AEGs
-# TODO: Make this only applicable after installing "heavy" cargo dependencies
+	email = jared.bean@creditgenie.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMl66zkgiCC41DWwxTA0PhRqZfOnMVo2c8dXjNJy54Bd
 [interactive]
 	diffFilter = delta --color-only
 [delta]

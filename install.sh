@@ -26,10 +26,13 @@ fi
 # Dependency installation
 echo "Installing dependencies"
 "${REPO_ROOT}/deps.sh" "${REPO_ROOT}"
-
 # Configuration setup
 echo "Configuring applications"
 "${REPO_ROOT}/config.sh" "${REPO_ROOT}"
+
+echo "Installing heavy dependencies - this may take a while"
+echo "Most things will work if you want to open a new shell now"
+"${REPO_ROOT}/deps.sh" "${REPO_ROOT}" heavy
 
 # Ensure installed VERSION file is updated.
 mkdir -p "$(dirname "${INSTALL_VERSION_FILE}")"
